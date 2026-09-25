@@ -1,0 +1,90 @@
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--card-pad);
+  box-shadow: var(--shadow-1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-2);
+  color: var(--color-fg);
+}
+
+.card-body {
+  font-size: var(--text-md);
+  color: var(--color-fg);
+  margin-bottom: var(--space-3);
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 3px solid var(--color-border);
+  box-shadow: var(--shadow-1);
+}
+
+.btn {
+  display: inline-block;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-md);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.btn-primary:hover {
+  filter: brightness(0.9);
+  text-decoration: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-border);
+  text-decoration: none;
+}
+
+.badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.badge {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-sm);
+  background-color: var(--color-border);
+  color: var(--color-fg);
+  border-radius: var(--radius-full);
+  font-weight: 500;
+}
+
+.badge-highlight {
+  background-color: var(--color-focus);
+  color: #000000;
+}
