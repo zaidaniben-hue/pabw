@@ -1,0 +1,17 @@
+body:not(:has(#tema:checked)) {
+  --color-bg:      var(--sky-100);
+  --color-fg:      var(--slate-900);
+  --color-surface: var(--white);
+  --color-border:  var(--sky-200);
+  --color-primary: var(--sky-600);
+  --color-focus:   var(--yellow-500);
+}
+
+body:has(#tema:checked) {
+  --color-bg:      var(--slate-900);
+  --color-fg:      var(--white);
+  --color-surface: var(--sky-800);
+  --color-border:  var(--sky-600);
+  --color-primary: var(--sky-200);
+  --color-focus:   var(--yellow-500);
+}

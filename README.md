@@ -10,16 +10,15 @@ Topik halaman saya: Profil Mahasiswa.
  
 - Judul halaman: Profil saya
 - Deskripsi: Laman web tentang saya
-- Tautan navigasi: Daftar Buku, Tambah Buku, Tentang Saya
-- Dua bagian utama: Daftar Buku, Tambah Buku
-- Kolom tabel: judul, penulis, tahun terbit, status baca
-- Kolom form: judul, penulis, status baca
-- Gambar: koleksi-1.webp
+- Tautan navigasi: Tentang,karya,kontak
+- Dua bagian utama: Profil,Kontak
+- Kolom tabel: Kegiatan,Peran,Waktu
+- Kolom form: Nama lengkap,Email,Nim,Pesan
+- Gambar: foto-profil.png
  
 ## Catatan penggunaan AI
  
-Tulis bagian mana yang dibantu AI dan bagian mana yang Anda
-kerjakan sendiri, atau tulis: tidak memakai AI.
+CSS
 
 ## Design token halaman profil
 
@@ -43,3 +42,9 @@ kerjakan sendiri, atau tulis: tidak memakai AI.
 | --text-3xl | 2.25rem | Ukuran judul utama (h1) |
 
 Kriteria selesai saya: Mengubah --sky-600 di lapis 1 atau --color-primary di lapis 2 pada tokens.css di satu baris akan mengubah seluruh komponen interaktif secara konsisten.
+
+## Evaluasi Tujuan Tiap Bagian 
+
+- Profil: Mengenalkan identitas ke orang.
+- Portofolio: Menunjukkan hasil proyek saya.
+- Kontak: Memudahkan pengunjung menghubungi saya.
