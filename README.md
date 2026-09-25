@@ -6,10 +6,10 @@ Berbasis Web, satu folder untuk setiap pertemuan.
  
 ## Pertemuan 4 — Halaman profil saya
  
-Topik halaman saya: koleksi buku di rak saya.
+Topik halaman saya: Profil Mahasiswa.
  
 - Judul halaman: Profil saya
-- Deskripsi: daftar buku yang saya miliki beserta status bacanya
+- Deskripsi: Laman web tentang saya
 - Tautan navigasi: Daftar Buku, Tambah Buku, Tentang Saya
 - Dua bagian utama: Daftar Buku, Tambah Buku
 - Kolom tabel: judul, penulis, tahun terbit, status baca
