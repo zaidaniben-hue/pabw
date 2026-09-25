@@ -1,0 +1,41 @@
+:root {
+  --sky-100:   #F0F9FF;
+  --sky-200:   #BAE6FD;
+  --sky-600:   #0284C7;
+  --sky-800:   #075985;
+  --yellow-500: #EAB308;
+  --slate-900:  #0F172A;
+  --white:      #FFFFFF;
+  --red-700:    #B00020;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+
+  /* Sudut & Bayangan */
+  --radius-md:   0.5rem;
+  --radius-full: 999px;
+  --shadow-1:    0 1px 3px rgba(0, 0, 0, 0.10);
+
+  /* Ukuran Tipografi (dalam rem) */
+  --text-sm:  0.875rem;
+  --text-md:  1rem;
+  --text-xl:  1.5rem;
+  --text-3xl: 2.25rem;
+}
+
+/* LAPIS 2 — Semantik: peran elemen, mengambil nilai dari lapis 1 */
+:root {
+  --color-bg:      var(--sky-100);
+  --color-fg:      var(--slate-900);
+  --color-surface: var(--white);
+  --color-border:  var(--sky-200);
+  --color-primary: var(--sky-600);
+  --color-danger:  var(--red-700);
+  --color-focus:   var(--yellow-500);
+
+  --card-pad:    var(--space-4);
+  --section-gap: var(--space-6);
+}
