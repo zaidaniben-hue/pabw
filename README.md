@@ -48,3 +48,13 @@ Kriteria selesai saya: Mengubah --sky-600 di lapis 1 atau --color-primary di lap
 - Profil: Mengenalkan identitas ke orang.
 - Portofolio: Menunjukkan hasil proyek saya.
 - Kontak: Memudahkan pengunjung menghubungi saya.
+
+## Worksheet P5 Flexbox dan Grid
+
+* .page: Menambahkan CSS Grid 3 baris  agar tinggi halaman pas setinggi layar.
+* .navbar: Menambahkan Flexbox untuk merapikan menu berderet satu baris.
+* .isi: Menambahkan CSS Grid 2 kolom  untuk memisahkan area sidebar dan konten utama.
+* .galeri: Menambahkan Grid adaptif agar jumlah kolom berubah otomatis tanpa media query.
+* .kartu__kaki: Menambahkan Flexbox untuk menyelaraskan bagian bawah kartu.
+* .galeri .kartu: Menyamakan tinggi minimum kartu di dalam grid.
+* **.kartu__isi & .kartu__judul: Menambahkan untuk mencegah teks meluber keluar kotak pada layar sempit.
