@@ -25,8 +25,8 @@
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 7.5rem;
+  height: 7.5rem;
   border-radius: var(--radius-full);
   object-fit: cover;
   border: 3px solid var(--color-border);
@@ -116,4 +116,156 @@
   border-color: var(--color-primary);
   background-color: var(--color-primary);
   color: var(--color-surface);
+}
+
+/* ================= galeri dan kartu ================= */
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-4);
+}
+
+.kartu {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+  padding: var(--card-pad);
+}
+
+.kartu__kaki {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.galeri .kartu {
+  display: grid;
+  align-content: start;
+  min-height: 14rem;
+  gap: var(--space-2);
+}
+
+.kartu__isi { min-width: 0; }
+.kartu__judul { overflow-wrap: anywhere; }
+
+/* ================= form dan keadaan tidak sah ================= */
+.form-kolom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+input,
+textarea {
+  font: inherit;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-fg);
+}
+
+button {
+  font: inherit;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-surface);
+  cursor: pointer;
+}
+
+/* ditandai hanya setelah pengguna mengisi, bukan sejak halaman dibuka */
+input:user-invalid,
+textarea:user-invalid {
+  border-color: var(--color-danger);
+  border-width: 2px;
+}
+
+.pesan-galat {
+  display: none;
+  color: var(--color-danger);
+  font-size: var(--text-sm);
+}
+
+.form-kolom:has(input:user-invalid) .pesan-galat,
+.form-kolom:has(textarea:user-invalid) .pesan-galat {
+  display: block;
+}
+
+/* ================= bagian tambahan ================= */
+details {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  background: var(--color-surface);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+ol.lini {
+  list-style: none;
+  border-left: 3px solid var(--color-primary);
+  padding-left: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+dl.keterampilan dt {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+dl.keterampilan dd {
+  margin-left: 0;
+  padding-left: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+/* ================= tabel dan foto ================= */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+th,
+td {
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+}
+
+th {
+  background: var(--color-surface);
+}
+
+figure.foto img {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+}
+
+figcaption {
+  font-size: var(--text-sm);
+  margin-top: var(--space-1);
 }

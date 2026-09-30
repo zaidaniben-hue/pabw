@@ -1,17 +1,24 @@
-body:not(:has(#tema:checked)) {
-  --color-bg:      var(--sky-100);
-  --color-fg:      var(--slate-900);
-  --color-surface: var(--white);
-  --color-border:  var(--sky-200);
-  --color-primary: var(--sky-600);
-  --color-focus:   var(--yellow-500);
+/* Tema gelap mengikuti pengaturan sistem pengguna */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:      #0F172A;
+    --color-fg:      #E2E8F0;
+    --color-surface: #1E293B;
+    --color-border:  #334155;
+    --color-primary: #7DA9F7;
+    --color-danger:  #FF8A8A;
+    --color-focus:   #FFC000;
+  }
 }
 
-body:has(#tema:checked) {
-  --color-bg:      var(--slate-900);
-  --color-fg:      var(--white);
-  --color-surface: var(--sky-800);
-  --color-border:  var(--sky-600);
-  --color-primary: var(--sky-200);
-  --color-focus:   var(--yellow-500);
+/* Pengalih manual harus ditulis SESUDAH blok media query,
+   supaya menang saat keduanya menyala bersamaan. */
+:root:has(#tema:checked) {
+  --color-bg:      #0F172A;
+  --color-fg:      #E2E8F0;
+  --color-surface: #1E293B;
+  --color-border:  #334155;
+  --color-primary: #7DA9F7;
+  --color-danger:  #FF8A8A;
+  --color-focus:   #FFC000;
 }

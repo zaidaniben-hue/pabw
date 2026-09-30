@@ -36,7 +36,8 @@
 <body>
   <a class="lewati" href="#utama">Lewati ke konten utama</a>
 
-  <header class="kepala">
+  <div class="page">
+  <header class="kepala navbar">
     <input type="checkbox" id="tema" class="pengalih-tema">
     <label for="tema" class="tombol-tema">Tema gelap</label>
 
@@ -45,7 +46,7 @@
     <!-- ISI 3 — satu kalimat tentang diri Anda. -->
     <p class="tagline">Mahasiswa Informatika yang sedang belajar membangun web</p>
     <nav aria-label="Navigasi utama">
-      <ul>
+      <ul class="nav-list">
         <li><a href="#tentang">Tentang</a></li>
         <li><a href="#karya">Karya</a></li>
         <li><a href="#kontak">Kontak</a></li>
@@ -58,6 +59,7 @@
     <section id="tentang">
       <h2>Tentang saya</h2>
 
+      <div class="content">
       <figure class="foto">
         <!-- ISI 4 — pakai foto Anda sendiri dengan nama berkas yang sama,
              atau biarkan berkas contoh apa adanya. -->
@@ -73,6 +75,7 @@
          Saya berasal dari Klaten,saya berminat kerja di bidang informatika dan 
          sekarang sedang mempelajari Pengembangan web.</p>
 
+      <div class="table-wrap">
       <table>
         <!-- ISI 6 — judul tabel dan isi minimal tiga baris. -->
         <caption>Kegiatan yang saya ikuti semester ini</caption>
@@ -101,16 +104,27 @@
           </tr>
         </tbody>
       </table>
+      </div>
+      </div>
     </section>
 
     <section id="karya">
       <h2>Karya saya</h2>
       <!-- ISI 7 — tiga karya, proyek, atau hal yang pernah Anda buat.
            Boleh tugas kuliah, karya pribadi, atau hobi. -->
-      <ul>
-        <li>Merestorasi motor — Restorasi motor tua - 2025.</li>
-        <li>Aplikasi java — Aplikasi pengelola stok - 2026.</li>
-        <li>IOT — Pemakan ikan otomatis - 2024.</li>
+      <ul class="galeri">
+        <li class="kartu">
+          <p class="kartu__isi">Merestorasi motor — restorasi motor tua</p>
+          <p class="kartu__kaki">Karya · 2025</p>
+        </li>
+        <li class="kartu">
+          <p class="kartu__isi">Aplikasi java — pengelola stok</p>
+          <p class="kartu__kaki">Karya · 2026</p>
+        </li>
+        <li class="kartu">
+          <p class="kartu__isi">IOT — pemakan ikan otomatis</p>
+          <p class="kartu__kaki">Karya · 2024</p>
+        </li>
       </ul>
     </section>
 
@@ -122,29 +136,32 @@
         <fieldset>
           <legend>Data pengirim</legend>
 
-          <p>
+          <p class="form-kolom">
             <label for="nama">Nama lengkap</label>
             <input id="nama" name="nama" type="text"
                    autocomplete="name" required>
+            <span class="pesan-galat">Nama wajib diisi.</span>
           </p>
 
-          <p>
+          <p class="form-kolom">
             <label for="email">Email</label>
             <input id="email" name="email" type="email"
                    autocomplete="email" required>
+            <span class="pesan-galat">Email wajib diisi dan harus valid.</span>
           </p>
 
-          <p>
+          <p class="form-kolom">
             <label for="nim">NIM</label>
             <!-- ISI 8 — ganti angka di dalam pattern dengan NIM Anda sendiri. -->
             <input id="nim" name="nim" type="text" inputmode="numeric"
                    pattern="[0-9]{8}" aria-describedby="nim-bantuan" required>
-            <span id="nim-bantuan"></span>
+            <span class="pesan-galat" id="nim-bantuan">NIM harus 8 angka.</span>
           </p>
 
-          <p>
+          <p class="form-kolom">
             <label for="pesan">Pesan</label>
             <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            <span class="pesan-galat">Pesan wajib diisi.</span>
           </p>
 
           <button type="submit">Kirim</button>
@@ -190,9 +207,10 @@
 </section>
   </main>
 
-  <footer class="kaki">
+  <footer class="kaki footer">
     <!-- ISI 9 — nama, NIM, tahun. -->
     <p>Muh Zaidan Iben Naufal · 25523055 · <time datetime="2026">2026</time></p>
   </footer>
+  </div>
 </body>
 </html>

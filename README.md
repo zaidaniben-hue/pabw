@@ -58,3 +58,11 @@ Kriteria selesai saya: Mengubah --sky-600 di lapis 1 atau --color-primary di lap
 * .kartu__kaki: Menambahkan Flexbox untuk menyelaraskan bagian bawah kartu.
 * .galeri .kartu: Menyamakan tinggi minimum kartu di dalam grid.
 * **.kartu__isi & .kartu__judul: Menambahkan untuk mencegah teks meluber keluar kotak pada layar sempit.
+
+## worksheet P6 Responsif Mobile first
+* 1. Meta Viewport: Memasang `<meta name="viewport" content="width=device-width, initial-scale=1.0">` di `index.html`
+  2. Hapus Lebar Tetap: Mengubah elemen berlebar piksel tetap (`.sidebar`, `.kartu`, `img`) menjadi persentase/relatif
+  3. `responsif.css`:
+   * Base (All Screen): Layout 1 kolom & pembatasan media (`max-width: 100%`)
+   * Tablet (`min-width: 48rem`): Galeri berubah jadi 2 kolom
+   * Desktop (`min-width: 60rem`): Galeri 3 kolom + sidebar di samping konten

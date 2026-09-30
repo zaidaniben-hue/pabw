@@ -2,28 +2,31 @@
 <html lang="id">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Profil Iben — PABW 2026/2027</title>
   <meta name="description" content="Halaman profil mahasiswa PABW: tentang saya, karya, dan kontak.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/komponen.css">
 <link rel="stylesheet" href="css/tema.css">
+<link rel="stylesheet" href="css/responsif.css">
 </head>
 <body>
   <a class="lewati" href="#utama">Lewati ke konten utama</a>
 
-  <header class="kepala">
+  <div class="page">
+  <header class="kepala navbar">
     <input type="checkbox" id="tema" class="pengalih-tema">
     <label for="tema" class="tombol-tema">Tema gelap</label>
 
     <h1>Muh Zaidan Iben Naufal</h1>
     <p class="tagline">Mahasiswa Informatika yang sedang belajar membangun web</p>
     <nav aria-label="Navigasi utama">
-      <ul>
+      <ul class="nav-list">
         <li><a href="#tentang">Tentang</a></li>
         <li><a href="#karya">Karya</a></li>
         <li><a href="#kontak">Kontak</a></li>
@@ -36,6 +39,7 @@
     <section id="tentang">
       <h2>Tentang saya</h2>
 
+      <div class="content">
       <figure class="foto">
         <img src="media/foto-profil.png"
              alt="Foto diri Nama Anda memakai kemeja putih."
@@ -47,6 +51,7 @@
          Saya berasal dari Klaten,saya berminat kerja di bidang informatika dan 
          sekarang sedang mempelajari Pengembangan web.</p>
 
+      <div class="table-wrap">
       <table>
         <caption>Kegiatan yang saya ikuti semester ini</caption>
         <thead>
@@ -74,14 +79,25 @@
           </tr>
         </tbody>
       </table>
+      </div>
+      </div>
     </section>
 
     <section id="karya">
       <h2>Karya saya</h2>
-      <ul>
-        <li>Merestorasi motor — Restorasi motor tua - 2025.</li>
-        <li>Aplikasi java — Aplikasi pengelola stok - 2026.</li>
-        <li>IOT — Pemakan ikan otomatis - 2024.</li>
+      <ul class="galeri grid">
+        <li class="kartu">
+          <p class="kartu__isi">Merestorasi motor — restorasi motor tua</p>
+          <p class="kartu__kaki">Karya · 2025</p>
+        </li>
+        <li class="kartu">
+          <p class="kartu__isi">Aplikasi java — pengelola stok</p>
+          <p class="kartu__kaki">Karya · 2026</p>
+        </li>
+        <li class="kartu">
+          <p class="kartu__isi">IOT — pemakan ikan otomatis</p>
+          <p class="kartu__kaki">Karya · 2024</p>
+        </li>
       </ul>
     </section>
 
@@ -93,28 +109,31 @@
         <fieldset>
           <legend>Data pengirim</legend>
 
-          <p>
+          <p class="form-kolom">
             <label for="nama">Nama lengkap</label>
             <input id="nama" name="nama" type="text"
                    autocomplete="name" required>
+            <span class="pesan-galat">Nama wajib diisi.</span>
           </p>
 
-          <p>
+          <p class="form-kolom">
             <label for="email">Email</label>
             <input id="email" name="email" type="email"
                    autocomplete="email" required>
+            <span class="pesan-galat">Email wajib diisi dan harus valid.</span>
           </p>
 
-          <p>
+          <p class="form-kolom">
             <label for="nim">NIM</label>
             <input id="nim" name="nim" type="text" inputmode="numeric"
                    pattern="[0-9]{8}" aria-describedby="nim-bantuan" required>
-            <span id="nim-bantuan"></span>
+            <span class="pesan-galat" id="nim-bantuan">NIM harus 8 angka.</span>
           </p>
 
-          <p>
+          <p class="form-kolom">
             <label for="pesan">Pesan</label>
             <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            <span class="pesan-galat">Pesan wajib diisi.</span>
           </p>
 
           <button type="submit">Kirim</button>
@@ -160,8 +179,9 @@
 </section>
   </main>
 
-  <footer class="kaki">
+  <footer class="kaki footer">
     <p>Muh Zaidan Iben Naufal · 25523055 · <time datetime="2026">2026</time></p>
   </footer>
+  </div>
 </body>
 </html>

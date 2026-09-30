@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 68.75rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--space-4);
@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: var(--space-3);
   padding-bottom: var(--space-3);
   margin-bottom: var(--section-gap);
@@ -30,15 +31,15 @@
   margin-bottom: var(--section-gap);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .layout-main {
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 16rem 1fr;
   }
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: var(--space-4);
 }
 
@@ -51,7 +52,7 @@
   margin-bottom: var(--space-6);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .profile-header {
     flex-direction: row;
     text-align: left;
@@ -76,6 +77,7 @@
   display: flex;
   gap: var(--space-4);
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .isi {
@@ -99,4 +101,11 @@
 
 .papan { 
   grid-row: span 2; 
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+  padding-block: var(--space-6);
 }
