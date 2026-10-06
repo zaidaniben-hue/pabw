@@ -4,6 +4,12 @@ const profil = {
   keahlian: ["HTML", "Phyton", "Java"],
 };
 
+const daftarProyek = [
+  { judul: "Halaman Profil", tahun: 2026, selesai: true },
+  { judul: "Katalog Produk", tahun: 2026, selesai: false },
+];
+
+
 const kalimat = `Nama saya ${profil.nama}, dan saya belajar ${profil.keahlian.length} hal.`;
 console.log(kalimat);
 
