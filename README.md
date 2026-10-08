@@ -66,3 +66,6 @@ Kriteria selesai saya: Mengubah --sky-600 di lapis 1 atau --color-primary di lap
    * Base (All Screen): Layout 1 kolom & pembatasan media (`max-width: 100%`)
    * Tablet (`min-width: 48rem`): Galeri berubah jadi 2 kolom
    * Desktop (`min-width: 60rem`): Galeri 3 kolom + sidebar di samping konten
+
+## worksheet P8 
+* AI untuk debugging masalah dicode
