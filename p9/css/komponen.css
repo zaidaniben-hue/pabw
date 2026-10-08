@@ -268,3 +268,10 @@ figcaption {
   font-size: var(--text-sm);
   margin-top: var(--space-1);
 }
+
+.aktif {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+

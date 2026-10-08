@@ -5,8 +5,8 @@ const profil = {
 };
 
 export const daftarProyek = [
-  { judul: "Halaman Profil", tahun: 2026, selesai: true },
-  { judul: "Katalog Produk", tahun: 2026, selesai: false },
+  { judul: "Halaman Profil", kategori: "web", tahun: 2026, selesai: true },
+  { judul: "Katalog Produk", kategori: "data", tahun: 2026, selesai: false },
 ];
 
 const kalimat = `Nama saya ${profil.nama}, dan saya belajar ${profil.keahlian.length} hal.`;
