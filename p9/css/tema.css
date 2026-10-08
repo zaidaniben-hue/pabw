@@ -1,0 +1,24 @@
+/* Tema gelap mengikuti pengaturan sistem pengguna */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:      #0F172A;
+    --color-fg:      #E2E8F0;
+    --color-surface: #1E293B;
+    --color-border:  #334155;
+    --color-primary: #7DA9F7;
+    --color-danger:  #FF8A8A;
+    --color-focus:   #FFC000;
+  }
+}
+
+/* Pengalih manual harus ditulis SESUDAH blok media query,
+   supaya menang saat keduanya menyala bersamaan. */
+:root:has(#tema:checked) {
+  --color-bg:      #0F172A;
+  --color-fg:      #E2E8F0;
+  --color-surface: #1E293B;
+  --color-border:  #334155;
+  --color-primary: #7DA9F7;
+  --color-danger:  #FF8A8A;
+  --color-focus:   #FFC000;
+}
