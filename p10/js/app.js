@@ -30,3 +30,18 @@ console.table(selesai);
 
 const katalog = daftarProyek.find((proyek) => proyek.judul === "Katalog Produk");
 console.log(katalog);
+
+import { ambilNotisia } from './api.js';
+
+const wadah = document.querySelector('#daftar');
+
+async function jalankan() {
+  try {
+    const data = await ambilNotisia();
+  } catch (galat) {
+    wadah.textContent = 'Gagal memuat data: ' + galat.message;
+  }
+}
+
+jalankan();
+
