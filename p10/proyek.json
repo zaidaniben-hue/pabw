@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "titulu": "Pembaruan Profil Mahasiswa",
+    "isi": "Berhasil menghubungkan data lokal menggunakan fetch."
+  },
+  {
+    "id": 2,
+    "titulu": "Proyek Kedua",
+    "isi": "Menampilkan data dari berkas notisia.json."
+  }
+]
