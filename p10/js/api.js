@@ -1,4 +1,4 @@
-const ALAMAT ='./proyek.json';
+const ALAMAT = './notisia.json';
 
 async function muat() {
   const respons = await fetch(ALAMAT);
@@ -22,5 +22,3 @@ export async function ambilNotisia() {
     throw galat;
   }
 }
-
-ambilNotisia()
