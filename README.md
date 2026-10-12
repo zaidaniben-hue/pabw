@@ -69,5 +69,3 @@ Kriteria selesai saya: Mengubah --sky-600 di lapis 1 atau --color-primary di lap
 
 ## worksheet P8 
 * AI untuk debugging masalah dicode
-
-awdad
