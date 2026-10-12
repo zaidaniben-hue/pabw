@@ -22,3 +22,5 @@ export async function ambilNotisia() {
     throw galat;
   }
 }
+
+ambilNotisia()
