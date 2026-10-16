@@ -1,16 +1,21 @@
-import { pilihKategori } from './state.js';
+import { pilihKategori, aturUlang } from './state.js';
 
 export function pasangPendengar() {
   const barisFilter = document.querySelector("#filter");
+  const tombolReset = document.querySelector("#tombol-reset");
   const formKontak = document.querySelector("form");
 
   if (barisFilter) {
     barisFilter.addEventListener("click", (event) => {
       const tombol = event.target.closest("button");
       if (!tombol) return;
+      pilihKategori(tombol.dataset.kategori);
+    });
+  }
 
-      const kategori = tombol.dataset.kategori;
-      pilihKategori(kategori);
+  if (tombolReset) {
+    tombolReset.addEventListener("click", () => {
+      aturUlang();
     });
   }
 
