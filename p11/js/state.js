@@ -7,8 +7,16 @@ const VERSI = 2;
 export function muat() {
   try {
     const raw = localStorage.getItem(KUNCI);
-    return JSON.parse(raw);
+    if (!raw) return null;
+
+    const isi = JSON.parse(raw);
+    if (isi?.versi !== VERSI) {
+      localStorage.removeItem(KUNCI); // Versi skema lama dibuang
+      return null;
+    }
+    return isi;
   } catch {
+    localStorage.removeItem(KUNCI);   // Data rusak (bukan JSON) dibuang
     return null;
   }
 }
