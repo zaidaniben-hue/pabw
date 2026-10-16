@@ -69,3 +69,8 @@ Kriteria selesai saya: Mengubah --sky-600 di lapis 1 atau --color-primary di lap
 
 ## worksheet P8 
 * AI untuk debugging masalah dicode
+
+## worksheet P11
+* node -v v26.11.1
+* npm -v 11.20.0
+* AI untuk debugging masalah dicode
