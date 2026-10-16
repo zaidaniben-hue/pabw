@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "titulu": "Pembaruan Fitur Portofolio Mahasiswa",
+    "ringkasan": "Integrasi lapisan data asinkron menggunakan fetch API dan penanganan status jaringan.",
+    "kategori": "Web Development",
+    "tanggal": "2026-10-12"
+  },
+  {
+    "id": 2,
+    "titulu": "Eksplorasi Algoritma Machine Learning",
+    "ringkasan": "Penyusunan modul pembelajaran implementasi Naive Bayes untuk klasifikasi data teks.",
+    "kategori": "Data Science",
+    "tanggal": "2026-10-10"
+  },
+  {
+    "id": 3,
+    "titulu": "Perancangan Prototipe Aplikasi Rental Kendaraan",
+    "ringkasan": "Desain antarmuka desktop untuk pemantauan ketersediaan unit dan transaksi sewa.",
+    "kategori": "Software Engineering",
+    "tanggal": "2026-09-28"
+  },
+  {
+    "id": 4,
+    "titulu": "Pengembangan Komponen Antarmuka Responsif",
+    "ringkasan": "Penerapan CSS tokens, layout grid, dan modularitas script berbasis ES Modules.",
+    "kategori": "Frontend",
+    "tanggal": "2026-09-15"
+  }
+]
